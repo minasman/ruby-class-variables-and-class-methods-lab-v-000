@@ -29,7 +29,7 @@ class Song
   def self.genre_count
     g_count = {}
     @@genres.each do |genre|
-      binding.pry 
+      #binding.pry 
       if g_count.has_key?(genre)
         g_count[genre] += 1 
       else
