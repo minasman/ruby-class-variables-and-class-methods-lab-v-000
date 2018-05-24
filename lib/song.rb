@@ -39,17 +39,17 @@ class Song
     g_count
   end
   
-  def self.genre_count
+  def self.artist_count
     a_count = {}
-    @@genres.each do |genre|
+    @@artists.each do |artist|
       #binding.pry 
-      if g_count.has_key?(genre)
-        g_count[genre] += 1 
+      if a_count.has_key?(artist)
+        a_count[artist] += 1 
       else
-        g_count[genre] = 1 
+        a_count[artist] = 1 
       end
     end
-    g_count
+    a_count
   end
   
 end
