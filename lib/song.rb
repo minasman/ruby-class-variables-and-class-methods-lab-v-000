@@ -1,4 +1,3 @@
-require 'pry'
 class Song
   @@count = 0 
   @@genres = []
@@ -29,7 +28,6 @@ class Song
   def self.genre_count
     g_count = {}
     @@genres.each do |genre|
-      #binding.pry 
       if g_count.has_key?(genre)
         g_count[genre] += 1 
       else
@@ -42,7 +40,6 @@ class Song
   def self.artist_count
     a_count = {}
     @@artists.each do |artist|
-      #binding.pry 
       if a_count.has_key?(artist)
         a_count[artist] += 1 
       else
